@@ -108,3 +108,7 @@ TW_NO_BATT_PERCENT := false
 TW_USE_TOOLBOX := true
 TW_NO_EXFAT_FUSE := true
 
+# Extra language
+TW_EXTRA_LANGUAGES := true
+TW_DEFAULT_LANGUAGE := zh_CN
+
