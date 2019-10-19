@@ -101,6 +101,10 @@ TW_INCLUDE_NTFS_3G := true
 TW_IGNORE_MISC_WIPE_DATA := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_NO_SCREEN_TIMEOUT := true
+TW_NO_BATT_PERCENT := false
 
 # Oreo/Pie addition
 TW_USE_TOOLBOX := true
+TW_NO_EXFAT_FUSE := true
+
