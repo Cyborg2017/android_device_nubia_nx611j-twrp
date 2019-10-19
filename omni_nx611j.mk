@@ -19,6 +19,9 @@ PRODUCT_RELEASE_NAME := nx611j
 
 $(call inherit-product, build/target/product/embedded.mk)
 
+# Verity
+$(call inherit-product, build/target/product/verity.mk)
+
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
