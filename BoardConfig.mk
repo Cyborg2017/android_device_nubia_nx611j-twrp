@@ -63,6 +63,9 @@ TARGET_KERNEL_CONFIG := lineageos_nx611j_defconfig
 # Clang
 TARGET_KERNEL_CLANG_COMPILE := true
 
+# LZMA compression for ramdisk	
+LZMA_RAMDISK_TARGETS += recovery 
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_HAS_LARGE_FILESYSTEM := true
