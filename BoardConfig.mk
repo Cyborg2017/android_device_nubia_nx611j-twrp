@@ -61,7 +61,7 @@ TARGET_KERNEL_SOURCE := kernel/nubia/sdm660
 TARGET_KERNEL_CONFIG := lineageos_nx611j_defconfig
 
 # Clang
-TARGET_KERNEL_CLANG_COMPILE := true
+#TARGET_KERNEL_CLANG_COMPILE := true
 
 # LZMA compression for ramdisk	
 LZMA_RAMDISK_TARGETS += recovery 
@@ -115,4 +115,3 @@ TW_DEFAULT_LANGUAGE := zh_CN
 # Excludes
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-
