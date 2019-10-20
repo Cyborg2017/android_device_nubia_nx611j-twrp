@@ -57,8 +57,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/nubia/sdm660
-TARGET_KERNEL_CONFIG := lineageos_nx611j_defconfig
+#TARGET_KERNEL_SOURCE := kernel/nubia/sdm660
+#TARGET_KERNEL_CONFIG := lineageos_nx611j_defconfig
+TARGET_PREBUILT_KERNEL := device/nubia/nx611j/prebuilt/Image.gz-dtb
 
 # Clang
 #TARGET_KERNEL_CLANG_COMPILE := true
