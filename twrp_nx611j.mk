@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The Android Open Source Project
+# Copyright (C) 2017-2022 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,15 +15,22 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := NX611J
+PRODUCT_RELEASE_NAME := nx611j
 
-$(call inherit-product, build/target/product/embedded.mk)
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
 # Verity
 $(call inherit-product, build/target/product/verity.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
+
+# qcom standard decryption
+PRODUCT_PACKAGES += \
+	qcom_decrypt \
+	qcom_decrypt_fbe
 
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.controller=a800000.dwc3 \
@@ -31,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.rmnet.func.name=rmnet_bam
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_nx611j
+PRODUCT_NAME := twrp_nx611j
 PRODUCT_DEVICE := nx611j
 PRODUCT_MANUFACTURER := Nubia
 PRODUCT_BRAND := Nubia
