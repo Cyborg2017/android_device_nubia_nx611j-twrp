@@ -5,7 +5,9 @@ TWRP Device configuration for Nubia Z18 Mini
 
 The Nubia Z18 Mini (codenamed "nx611j / NX611J") are high-end smartphones from Nubia.
 
-Kernel Source: https://github.com/nubia-development/android_kernel_nubia_sdm660/tree/nubia_sdm660_q-upstream
+## Kernel Sources
+
+https://github.com/Cyborg2017/android_kernel_nubia_sdm660-oss/tree/lineage-20.0
 
 ## Device specifications
 
