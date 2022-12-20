@@ -1,6 +1,6 @@
 Copyright 2019 - The OmniRom Project
 
-TWRP Device configuration for Nubia Z18 Mini
+TWRP Device configuration for Nubia Z18 Mini  (Decryption works on Android 11/12.x/13.x ROMs)
 ==============
 
 The Nubia Z18 Mini (codenamed "nx611j / NX611J") are high-end smartphones from Nubia.
